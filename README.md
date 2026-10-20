@@ -38,8 +38,8 @@ ketik micro config.json edit dan tmbahkan akun dan bug disana
 {
   "vmess": "vmess://AKUN VMESS ANDA",
   "bugs": [
-    "arjuna.axis.co.id",
-    "apac-marketing.tiktok.com",
+    "arjuna.bug",
+    "apac-market.bug",
     "TAMBAHKAN BUG LAGI",
   ],
   "local_port": 10808,
