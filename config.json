@@ -1,0 +1,18 @@
+{
+  "vmess": "vmess://eyJhZGQiOiJiaXpuZXQtMS5oaWRleHJheS54eXoiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImJpem5ldC0xLmhpZGV4cmF5Lnh5eiIsImlkIjoiMzE3OTc3NzYtOWMxZi00MTg3LWFkZTgtNTY2MDBlMzg0NWZiIiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiL3ZtZXNzIiwicGNzIjoiIiwicG9ydCI6IjQ0MyIsInBzIjoidHVhbnN4Iiwic2N5IjoiYXV0byIsInNuaSI6ImJpem5ldC0xLmhpZGV4cmF5Lnh5eiIsInRscyI6InRscyIsInR5cGUiOiItLS0iLCJ2IjoiMiIsInZjbiI6IiJ9",
+  "bugs": [
+    "arjuna.axis.co.id",
+    "apac-marketing.tiktok.com"
+  ],
+  "local_port": 10808,
+  "timeout": 15,
+  "stop_on_success": false,
+  "tests": [
+    "address",
+    "ws_host",
+    "sni"
+  ],
+  "fingerprint": "chrome",
+  "allowInsecure": true,
+  "test_url": "https://www.cloudflare.com/cdn-cgi/trace"
+}
