@@ -23,10 +23,41 @@ Jalankan perintah-perintah berikut di aplikasi Termux Anda:
 pkg update && pkg upgrade -y
 pkg install python curl wget unzip micro -y
 
-mkdir -p ~/v2ray && cd ~/v2ray
+git clone https://github.com/Alamyazid/tester_bug_v2ray
+
+cd tester_bug_v2ray
+
 curl -L -o v2ray.zip [https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-arm64-v8a.zip](https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-arm64-v8a.zip)
+
 unzip -o v2ray.zip v2ray
+
 chmod +x v2ray
-rm v2ray.zip
 
+ketik micro config.json edit dan tmbahkan akun dan bug disana
 
+{
+  "vmess": "vmess://AKUN VMESS ANDA",
+  "bugs": [
+    "arjuna.axis.co.id",
+    "apac-marketing.tiktok.com",
+    "TAMBAHKAN BUG LAGI",
+  ],
+  "local_port": 10808,
+  "timeout": 15,
+  "stop_on_success": false,
+  "tests": [
+    "address",
+    "ws_host",
+    "sni"
+  ],
+  "fingerprint": "chrome",
+  "allowInsecure": true,
+  "test_url": "https://www.cloudflare.com/cdn-cgi/trace"
+}
+
+UNTUK SAVE TEKAN 'ctrl+q' lalu 'y'
+
+## 📦 Menjalankan script
+python v2ray.py
+
+cek hasil penuh di response.json.
