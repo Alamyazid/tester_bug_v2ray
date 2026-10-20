@@ -27,7 +27,7 @@ git clone https://github.com/Alamyazid/tester_bug_v2ray
 
 cd tester_bug_v2ray
 
-curl -L -o v2ray.zip [https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-arm64-v8a.zip](https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-arm64-v8a.zip)
+curl -L -o v2ray.zip https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-arm64-v8a.zip
 
 unzip -o v2ray.zip v2ray
 
