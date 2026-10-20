@@ -1,1 +1,32 @@
-# tester_bug_v2ray
+# 🚀 V2Ray Tester - Termux (Pro Version)
+
+Alat pengujian otomatis berbasis Python untuk memvalidasi konfigurasi **VMess / WebSocket / TLS / SNI** langsung di dalam lingkungan **Termux**. Dirancang khusus agar struktur pengujiannya selaras dengan standar aplikasi **v2rayNG**.
+
+---
+
+## ✨ Fitur Utama
+
+- **Kompatibel V2Ray Core v5.x**: Menggunakan binary V2Ray Core terbaru yang stabil.
+- **Auto IP Resolver**: Otomatis menerjemahkan domain ke IP di sisi Python untuk memutus error DNS khas Termux (`lookup [::1]:53 connection refused`).
+- **Validasi Konten Ketat**: Menganalisis isi bodi Cloudflare Trace untuk mengeliminasi *false positive* (seperti halaman jebakan/redirect operator seluler).
+- **Pengujian Multi-Metode**: Mendukung pengujian metode `ADDRESS`, `WS_HOST`, dan `SNI`.
+- **Export Laporan JSON**: Menyimpan ringkasan pengujian ke `response.json` untuk diintegrasikan dengan alat lain.
+
+---
+
+## 📦 Panduan Instalasi (Langkah Demi Langkah)
+
+Jalankan perintah-perintah berikut di aplikasi Termux Anda:
+
+### 1. Update Termux & Install Dependensi Utama
+```bash
+pkg update && pkg upgrade -y
+pkg install python curl wget unzip micro -y
+
+mkdir -p ~/v2ray && cd ~/v2ray
+curl -L -o v2ray.zip [https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-arm64-v8a.zip](https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-arm64-v8a.zip)
+unzip -o v2ray.zip v2ray
+chmod +x v2ray
+rm v2ray.zip
+
+
