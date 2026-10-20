@@ -1,8 +1,8 @@
 {
-  "vmess": "vmess://eyJhZGQiOiJiaXpuZXQtMS5oaWRleHJheS54eXoiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImJpem5ldC0xLmhpZGV4cmF5Lnh5eiIsImlkIjoiMzE3OTc3NzYtOWMxZi00MTg3LWFkZTgtNTY2MDBlMzg0NWZiIiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiL3ZtZXNzIiwicGNzIjoiIiwicG9ydCI6IjQ0MyIsInBzIjoidHVhbnN4Iiwic2N5IjoiYXV0byIsInNuaSI6ImJpem5ldC0xLmhpZGV4cmF5Lnh5eiIsInRscyI6InRscyIsInR5cGUiOiItLS0iLCJ2IjoiMiIsInZjbiI6IiJ9",
+  "vmess": "vmess://akun anda",
   "bugs": [
-    "arjuna.axis.co.id",
-    "apac-marketing.tiktok.com"
+    "arjunabug.com",
+    "apac-bug.com",
   ],
   "local_port": 10808,
   "timeout": 15,
